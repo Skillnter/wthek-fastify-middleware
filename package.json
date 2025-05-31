@@ -1,0 +1,78 @@
+{
+    "name": "@wthek/fastify-middleware",
+    "version": "1.0.0-beta.1",
+    "description": "Fastify middleware for handling and formatting errors using http-error-kit. Ensures structured error responses with correct status codes.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "jest --config jest.config.ts",
+        "build": "tsc --build",
+        "coverage": "jest --coverage --config jest.config.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Skillnter/wthek-fastify-middleware.git"
+    },
+    "keywords": [
+        "http",
+        "error",
+        "kit",
+        "http-errors",
+        "custom-errors",
+        "error-handling",
+        "fastify",
+        "skillnter"
+    ],
+    "author": "Himanshu Bansal <skillhimanshubansal@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Skillnter/wthek-fastify-middleware/issues"
+    },
+    "homepage": "https://github.com/Skillnter/wthek-fastify-middleware#readme",
+    "dependencies": {
+        "fastify": "^5.3.3",
+        "http-error-kit": "^1.1.0",
+        "http-response-status-code": "^1.7.5"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.13.4",
+        "@typescript-eslint/eslint-plugin": "^8.22.0",
+        "eslint-plugin-security": "^3.0.1",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.5",
+        "ts-node": "^10.9.2",
+        "tslib": "^2.8.1",
+        "typescript": "^5.7.3"
+    },
+    "publishConfig": {
+        "@skillnter:registry": "https://npm.pkg.github.com/"
+    },
+    "files": [
+        "dist/index.js",
+        "dist/index.d.ts",
+        "LICENSE"
+    ],
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/Skillnter"
+        },
+        {
+            "type": "patreon",
+            "url": "https://www.patreon.com/skillnter"
+        },
+        {
+            "type": "open_collective",
+            "url": "https://opencollective.com/skillnter"
+        },
+        {
+            "type": "buy_me_a_coffee",
+            "url": "https://buymeacoffee.com/skillnter"
+        },
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.com/paypalme/skillnte"
+        }
+    ]
+}
