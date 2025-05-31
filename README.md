@@ -7,6 +7,7 @@ _Built for applications powered by [http-error-kit][http-error-kit], this middle
 > 💡 What the HEK?! Need a hassle-free way to manage error responses for `http-error-kit` errors in Fastify? `@wthek/fastify-middleware` has got you covered!
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/skillnter/wthek-fastify-middleware/main.yml)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0d7fa65b1a92491d98c117cc8f305bc2)](https://app.codacy.com/gh/Skillnter/wthek-fastify-middleware?utm_source=github.com&utm_medium=referral&utm_content=Skillnter/wthek-fastify-middleware&utm_campaign=Badge_Grade)
 [![npm version](https://img.shields.io/npm/v/%40wthek%2Ffastify-middleware?color=brightgreen)](https://www.npmjs.com/package/@wthek/restify-middleware)
 [![GitHub license](https://img.shields.io/github/license/skillnter/wthek-fastify-middleware?color=brightgreen)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/Skillnter/wthek-fastify-middleware)](https://github.com/Skillnter/wthek-fastify-middleware/issues)
