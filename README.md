@@ -14,7 +14,7 @@ _Built for applications powered by [http-error-kit][http-error-kit], this middle
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bf305cd8aa0146568be65560e52fa8d4)](https://app.codacy.com/gh/Skillnter/wthek-fastify-middleware/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 ![npms.io (final)](https://img.shields.io/npms-io/maintenance-score/%40wthek%2Ffastify-middleware?color=brightgreen)
 ![npm](https://img.shields.io/npm/dy/%40wthek%2Ffastify-middleware)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/@wthek/fastify-middleware/1.0.0)](https://socket.dev/npm/package/@wthek/fastify-middleware/overview/1.0.0)
+[![Socket Badge](https://socket.dev/api/badge/npm/package/@wthek/fastify-middleware/1.0.1)](https://socket.dev/npm/package/@wthek/fastify-middleware/overview/1.0.1)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](https://skillnter.github.io/wthek-fastify-middleware/)
 [![Github Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-30363D?&logo=GitHub-Sponsors&logoColor=EA4AAA)](https://github.com/sponsors/Skillnter)
 [![Open Collective](https://img.shields.io/badge/Open%20Collective-3385FF?logo=open-collective&logoColor=white)](https://opencollective.com/skillnter)
