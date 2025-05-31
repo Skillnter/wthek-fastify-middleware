@@ -10,8 +10,8 @@ _Built for applications powered by [http-error-kit][http-error-kit], this middle
 [![npm version](https://img.shields.io/npm/v/%40wthek%2Ffastify-middleware?color=brightgreen)](https://www.npmjs.com/package/@wthek/restify-middleware)
 [![GitHub license](https://img.shields.io/github/license/skillnter/wthek-fastify-middleware?color=brightgreen)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/Skillnter/wthek-fastify-middleware)](https://github.com/Skillnter/wthek-fastify-middleware/issues)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/bf305cd8aa0146568be65560e52fa8d4)](https://app.codacy.com/gh/Skillnter/wthek-fastify-middleware/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bf305cd8aa0146568be65560e52fa8d4)](https://app.codacy.com/gh/Skillnter/wthek-fastify-middleware/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/f672583cdb534cfd8eb16b71249ba35c)](https://app.codacy.com/gh/Skillnter/wthek-fastify-middleware/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f672583cdb534cfd8eb16b71249ba35c)](https://app.codacy.com/gh/Skillnter/wthek-fastify-middleware/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 ![npms.io (final)](https://img.shields.io/npms-io/maintenance-score/%40wthek%2Ffastify-middleware?color=brightgreen)
 ![npm](https://img.shields.io/npm/dy/%40wthek%2Ffastify-middleware)
 [![Socket Badge](https://socket.dev/api/badge/npm/package/@wthek/fastify-middleware/1.0.0)](https://socket.dev/npm/package/@wthek/fastify-middleware/overview/1.0.0)
@@ -24,7 +24,7 @@ _Built for applications powered by [http-error-kit][http-error-kit], this middle
 
 ## Features
 
--   **Official `http-error-kit` Extension** – The recommended middleware for Fastify apps.
+-   **Official `http-error-kit` Extension** – The recommended middleware for Restify apps.
 -   **Auto-sets HTTP status codes** – Ensures the response status matches the error type.
 -   **Plug-and-Play Middleware** – Just drop it before starting your server!
 -   **Graceful Fallbacks** – Passes unrecognized errors to the next middleware.
@@ -119,7 +119,7 @@ You can also use the following:
 
 ## License
 
-`@wthek/fastify-middleware` project is open-sourced software licensed under the [MIT license](LICENSE) by [Himanshu Bansal][skillnter].
+`@wthek/restify-middleware` project is open-sourced software licensed under the [MIT license](LICENSE) by [Himanshu Bansal][skillnter].
 
 [skillnter]: https://github.com/Skillnter/
 [http-error-kit]: https://www.npmjs.com/package/http-error-kit
