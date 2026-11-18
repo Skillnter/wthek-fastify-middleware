@@ -1,0 +1,60 @@
+# @wthek/fastify-middleware
+
+> Production-safe Fastify error-handling middleware for `http-error-kit`.
+
+## Overview
+`@wthek/fastify-middleware` catches `KitHttpError` and `KitGeneralError` instances thrown in Fastify route handlers and automatically responds with the matching HTTP status code and structured JSON error payload. It protects against `FST_ERR_REP_ALREADY_SENT` crashes via `reply.sent` guards, integrates with Pino logging, and optionally handles unknown exceptions.
+
+## Installation
+```bash
+npm install @wthek/fastify-middleware http-error-kit http-response-status-code
+```
+
+## Quick Start
+```typescript
+import Fastify from "fastify";
+import { KitFastifyMiddleware } from "@wthek/fastify-middleware";
+import { BadRequestError, NotFoundError } from "http-error-kit";
+
+const app = Fastify({ logger: true });
+
+// Register error handling middleware
+KitFastifyMiddleware(app, { log: true, handleUnknownErrors: true });
+
+app.get("/api/users/:id", async (request, reply) => {
+  if (!request.params.id) {
+    throw new BadRequestError("User ID is required");
+  }
+  throw new NotFoundError("User not found");
+});
+
+await app.listen({ port: 3000 });
+```
+
+## Scoped Error Handler (`KitFastifyErrorHandler`)
+```typescript
+import { KitFastifyErrorHandler } from "@wthek/fastify-middleware";
+
+// Pass directly to Fastify's setErrorHandler or inside a scoped plugin
+app.setErrorHandler(KitFastifyErrorHandler({ log: true }));
+```
+
+## API Reference
+
+### `KitFastifyMiddleware(app: FastifyInstance, options?: IKitFastifyMiddlewareOptions)`
+Registers `KitFastifyErrorHandler` on the given Fastify instance via `app.setErrorHandler()`.
+
+### `KitFastifyErrorHandler(options?: IKitFastifyMiddlewareOptions)`
+Returns a Fastify error handler function: `(error, request, reply) => void`.
+
+#### Options (`IKitFastifyMiddlewareOptions`)
+- `log` (`boolean | ((error: unknown, req: FastifyRequest) => void)`, default: `false`):
+  When `true`, logs via Fastify's `request.log.error`. When a function is provided, calls custom logger.
+- `handleUnknownErrors` (`boolean`, default: `false`):
+  When `true`, catches non-Kit errors and returns a 500 JSON response instead of Fastify's default error payload.
+
+## Safety Rules for AI Agents
+1. Register `KitFastifyMiddleware(app)` or `app.setErrorHandler(KitFastifyErrorHandler())` during application bootstrap.
+2. Throw errors directly from `http-error-kit` (e.g., `throw new NotFoundError(...)`) inside route handlers.
+3. Fastify natively handles promises; throw errors directly inside `async` route handlers without manual try/catch.
+

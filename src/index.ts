@@ -4,6 +4,14 @@ import { INTERNAL_SERVER_ERROR } from "http-response-status-code";
 
 /**
  * Configuration options for KitFastifyMiddleware and KitFastifyErrorHandler.
+ *
+ * @example
+ * ```typescript
+ * const options: IKitFastifyMiddlewareOptions = {
+ *     log: true,
+ *     handleUnknownErrors: true,
+ * };
+ * ```
  */
 export interface IKitFastifyMiddlewareOptions {
     /**
